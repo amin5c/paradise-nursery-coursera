@@ -1,0 +1,37 @@
+* { box-sizing: border-box; }
+body { margin: 0; font-family: 'Segoe UI', Arial, sans-serif; color: #222; }
+
+/* Landing page background image */
+.landing-page {
+  min-height: 100vh;
+  display: flex;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
+    url('https://images.unsplash.com/photo-1416879595882-3373a0480b5b?auto=format&fit=crop&w=1600&q=80');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #fff;
+}
+.landing-content {
+  margin: auto;
+  max-width: 1000px;
+  padding: 40px 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  align-items: center;
+  justify-content: center;
+}
+.landing-left { flex: 1 1 320px; text-align: center; }
+.landing-left h1 { font-size: 3rem; margin: 0 0 10px; }
+.landing-left p { font-size: 1.2rem; margin-bottom: 24px; }
+.get-started-button {
+  background: #4caf50; color: #fff; border: none; padding: 14px 32px;
+  font-size: 1.1rem; border-radius: 6px; cursor: pointer;
+}
+.get-started-button:hover { background: #388e3c; }
+.about-us {
+  flex: 1 1 320px; background: rgba(255, 255, 255, 0.15);
+  padding: 20px 24px; border-radius: 10px; backdrop-filter: blur(4px);
+}
+.about-us h2 { margin-top: 0; }
